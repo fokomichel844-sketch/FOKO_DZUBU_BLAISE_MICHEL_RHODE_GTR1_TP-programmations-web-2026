@@ -1,0 +1,63 @@
+body { /* Applique le style à toute la page */
+    background-color: #f4f4f4; /* Définit une couleur de fond gris clair */
+    font-family: Arial, sans-serif; /* Change la police d'écriture */
+    margin: 20px; /* Ajoute un espace autour du contenu */
+    h1 { /* Applique le style aux titres principaux */
+    color: darkblue; /* Change la couleur */
+    text-align: center; /* Centre le texte */
+}
+h1{
+    color: darkblue;
+    text-align: center;
+}
+h2 { /* Applique le style aux sous-titres */
+    color: #333; /* Définit une couleur gris foncé */
+}
+p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+line-height: 1.5; /* Améliore l'espacement entre les lignes */
+
+a { /* Applique le style à tous les liens */
+    text-decoration: none; /* Supprime le soulignement */
+    color: blue; /* Définit la couleur du lien */
+    margin-right: 15px; /* Ajoute un espace entre les liens */
+}
+
+a:hover { /* Applique un style lorsque la souris passe sur le lien */
+    color: red; /* Change la couleur */
+}
+
+ul { /* Applique le style aux listes */
+    background-color: white; /* Donne un fond blanc */
+    padding: 10px; /* Ajoute un espace intérieur */
+}
+
+li { /* Applique le style aux éléments de liste */
+    margin-bottom: 5px;
+}
+ul { /* Applique le style aux listes */
+    background-color: white; /* Donne un fond blanc */
+    padding: 10px; /* Ajoute un espace intérieur */
+}
+
+li { /* Applique le style aux éléments de liste */
+    margin-bottom: 5px; /* Ajoute un espace entre les éléments */
+}
+img { /* Applique le style aux images */
+    border-radius: 10px; /* Arrondit les coins */
+    margin-top: 10px; /* Ajoute un espace au-dessus */
+}
+.section { /* Définit un style réutilisable */
+    background-color: rgb(92, 81, 81); /* Fond blanc */
+    padding: 15px; /* Espace intérieur */
+    margin-bottom: 20px; /* Espace entre les sections */
+    border-radius: 5px; /* Coins arrondis */
+}
+.highlight { /* Met en évidence un texte */
+    color: green; /* Change la couleur */
+    font-weight: bold; /* Met en gras */
+}
+    
+}
