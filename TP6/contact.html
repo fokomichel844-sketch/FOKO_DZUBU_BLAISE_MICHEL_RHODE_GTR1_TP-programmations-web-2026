@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css"> <!-- Permet de lier le fichier CSS à la page HTML -->
+    <title>contact-mon mini-site </title>
+</head>
+<body> <!-- Ouvre la partie visible de la page web -->
+    <h1>Page de contact</h1> <!-- Affiche le titre principal de la page -->
+    <nav> <!-- Ouvre la zone de navigation du mini-site -->
+        <a href="index.html">Accueil</a> <!-- Crée un lien vers la page d'accueil du mini-site -->
+        <a href="presentation.html">Présentation</a> <!-- Crée un lien vers la page de présentation -->
+        <a href="contact.html">Contact</a> <!-- Crée un lien vers la page de contact actuelle -->
+    </nav> <!-- Ferme la zone de navigation -->
+    
+    <h2>Formulaire de contact</h2> <!-- Affiche un sous-titre pour présenter le formulaire -->
+    <p>Veuillez remplir ce formulaire pour envoyer un message.</p> <!-- Donne une consigne simple à l'utilisateur -->
+    
+    <form> <!-- Ouvre le formulaire de contact -->
+        <div class="section"> 
+        <label for="nom">Nom :</label> <!-- Affiche le libellé du champ nom -->
+     <!-- utilisateur doit saisir son nom -->
+<input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required> <!-- Crée un champ texte obligatoire avec un exemple de saisie -->
+
+<br> <!-- Effectue un retour à la ligne après le champ nom -->
+<br> <!-- Ajoute une ligne vide pour séparer les champs -->
+
+<label for="prenom">Prénom :</label> <!-- Affiche le texte indiquant que l’utilisateur doit saisir son prénom -->
+
+<input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required> <!-- Crée un champ texte obligatoire pour le prénom -->
+
+<br> <!-- Effectue un retour à la ligne après le champ prénom -->
+<br> <!-- Ajoute une ligne vide avant le champ email -->
+
+<label for="email">Adresse email :</label> <!-- Affiche le texte indiquant que l’utilisateur doit saisir son adresse email -->
+
+<input type="email" id="email" name="email" placeholder="exemple@email.com" required> <!-- Crée un champ email obligatoire avec une indication de format -->
+<br>
+<label for="telephone">Téléphone :</label> <!-- Affiche le texte associé au champ téléphone -->
+<input type="tel" id="telephone" name="telephone" placeholder="+237 6 XX XX XX XX"> <!-- Crée un champ destiné à recevoir un numéro de téléphone -->
+</div>
+<br>
+<br>
+<label for="domaine">Domaine d’intérêt :</label> <!-- Affiche le texte associé à la liste des domaines -->
+<select id="domaine" name="domaine" required> <!-- Crée une liste déroulante obligatoire pour choisir un domaine -->
+    <option value="">-- Choisir un domaine --</option> <!-- Affiche une option vide par défaut -->
+    <option value="reseaux">Réseaux informatiques</option> <!-- Propose le domaine réseaux informatiques -->
+    <option value="cybersecurite">Cybersécurité</option> <!-- Propose le domaine cybersécurité -->
+    <option value="developpement-web">Développement web</option> <!-- Propose le domaine développement web -->
+    <option value="administration-systeme">Administration système</option> <!-- Propose le domaine administration système -->
+</select> <!-- Ferme la liste déroulante -->
+
+
+
+<br> <!-- Effectue un retour à la ligne après le champ email -->
+<br> <!-- Ajoute une ligne vide avant le champ message -->
+
+<label for="motif">Motif du message :</label> <!-- Affiche le libellé de la liste déroulante -->
+<select id="motif" name="motif" required> <!-- Crée une liste déroulante obligatoire -->
+    <option value="">-- Choisir un motif --</option> <!-- Affiche une option vide pour obliger l'utilisateur à faire un choix -->
+    <option value="information">Demande d'information</option> <!-- Crée une option pour une demande d'information -->
+    <option value="stage">Demande de stage</option> <!-- Crée une option pour une demande de stage -->
+    <option value="projet">Proposition de projet</option> <!-- Crée une option pour une proposition de projet -->
+    <option value="autre">Autre demande</option> <!-- Crée une option pour les autres types de messages -->
+</select> <!-- Ferme la liste déroulante -->
+<br>
+<br>
+<p>Statut du visiteur :</p> <!-- Affiche une courte question avant les boutons radio -->
+<input type="radio" id="etudiant" name="statut" value="etudiant" required> <!-- Crée un bouton radio pour le statut étudiant -->
+<label for="etudiant">Étudiant</label> <!-- Affiche le texte associé au bouton radio étudiant -->
+<br> <!-- Place l'option suivante à la ligne -->
+<input type="radio" id="enseignant" name="statut" value="enseignant"> <!-- Crée un bouton radio pour le statut enseignant -->
+<label for="enseignant">Enseignant</label> <!-- Affiche le texte associé au bouton radio enseignant -->
+<br> <!-- Place l'option suivante à la ligne -->
+<input type="radio" id="professionnel" name="statut" value="professionnel"> <!-- Crée un bouton radio pour le statut professionnel -->
+<label for="professionnel">Professionnel</label> <!-- Affiche le texte associé au bouton radio professionnel -->
+<br> <!-- Effectue un retour à la ligne après les options -->
+<br> <!-- Ajoute une ligne vide avant la suite du formulaire -->
+
+<label for="message">Message :</label> <!-- Affiche le texte indiquant que l’utilisateur doit saisir son message -->
+
+<br> <!-- Place la zone de message à la ligne suivante -->
+
+<textarea id="message" name="message" rows="5" cols="40"
+placeholder="Écrivez votre message ici" required></textarea> <!-- Crée une zone de texte obligatoire avec un message indicatif -->
+
+<br> <!-- Effectue un retour à la ligne après la zone de message -->
+<br> <!-- Ajoute une ligne vide avant le bouton d’envoi -->
+
+<button type="submit">Envoyer</button> <!-- Crée un bouton pour envoyer le formulaire -->
+<br>
+<input type="checkbox" id="confirmation" name="confirmation" required> <!-- Crée une case à cocher obligatoire -->
+<label for="confirmation">Je confirme que les informations saisies sont correctes.</label> <!-- Affiche le texte associé à la case à cocher -->
+<br> <!-- Effectue un retour à la ligne après la case à cocher -->
+<br> <!-- Ajoute une ligne vide avant le bouton -->
+<button type="submit">envoyer</button>
+<button type="reset">effacer</button>
+    </form> <!-- Ferme le formulaire de contact -->
+</body> <!-- Ferme la partie visible de la page -->
+</html> <!-- Ferme le document HTML -->
